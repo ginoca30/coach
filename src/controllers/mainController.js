@@ -45,7 +45,7 @@ const controller = {
           secure: true, // true for 465, false for other ports
           auth: {
               user: 'consultas@coachjulietanor.com', // generated ethereal user
-              pass: '@Dolco1973$'  // generated ethereal password
+              pass: ''  // generated ethereal password
           },
           tls:{
             rejectUnauthorized:false
