@@ -1,0 +1,156 @@
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+body{
+	font-family: 'Noto Sans', sans-serif;
+    background-size: cover;
+}
+.nav-toggle{
+  top: 18 !important;
+}
+.contactoForm{
+  font-family: ui-sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0e0e0e;
+  border: 1px solid #436164bf;
+  padding: 10px;
+  border-radius: 2%;
+  margin-bottom: 10px;
+}
+.contact_form{	
+  max-width: 900px;
+  height: auto;
+  padding:10px;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255, 0.4);
+  flex-wrap: wrap;
+}
+input{
+	background-color: #fbfbfb;
+    width: 90%;
+    height: 25px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #436164bf;
+    margin-top: 6px;
+    padding-left: 10px;
+    margin-bottom: 17px;
+}
+textarea{
+  background-color: #fbfbfb;
+  width: 90%;
+  height: 100px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #436164bf;
+  margin-top: 7px;
+  padding-left: 10px;
+  margin-bottom: 11px;
+  padding-top: 15px;
+}
+label{
+  display: block; 
+  float: center; 	
+}
+.button{
+  height: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #088386ba;
+  border-color: #4dc7ce;
+  border-style: solid;
+  border-radius: 10px;
+  width: 280px;
+  cursor: pointer;
+}
+.button p{
+	color: #fff; 
+}
+span{
+	color: #ab4493; 
+}
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+h1{
+	font-size: 35px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+h3{
+	font-size: 16px;
+  padding-bottom: 15px;
+  color: #275dd1;
+}
+p{
+	font-size: 17px;
+  color: #022d2d;
+  font-family: ui-sans-serif;
+}
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+/* adicionales contacto*/
+.float-left{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+  display: block;
+  background-image: url(../images/contactoJuli.jpg);
+  background-size: 100vh;
+  padding-top: 70px;
+  background-repeat: no-repeat;
+  background-color: #040404;
+}
+@media (min-width:1024px){
+    .container{
+      background-size: cover;
+      height: 100vh;
+      padding-top: 170px;
+    }
+    .contact_form{	
+      margin: 0px auto;
+      border-radius: 10px;
+    }
+    .contactoForm {
+      width: 50%;
+      margin-bottom: 0px;
+      background: rgba(255,255,255, 0.4);
+      display: flex;
+      flex-flow: column;
+      justify-content: space-evenly;
+    }
+    .formulario{
+      width: 50%;
+      border: 1px solid #436164bf;
+      border-radius: 2%;
+      padding: 10px;
+    }
+  }

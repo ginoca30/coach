@@ -1,0 +1,85 @@
+<html lang="es">
+<%- include("partials/headC") %> 
+<body>	
+  <%- include("partials/header") %> 
+  <!-- formulario de contacto en html y css -->  
+  <main class="container">
+      <!-- <span class="float-left">
+          <a href="/">
+            <img class="logo" src="logo/logo.svg"> 
+          </a>
+      </span> -->
+      <div class="contact_form">
+          <div class="contactoForm">
+              <h2>
+                  Me alegra tu ínteres en el Coaching
+              </h2>
+              <p>
+                  Estoy a tu disposición para contestar a todas tus preguntas y ofrecerte tu primera sesión de coaching.
+              </p>
+              <p>
+                  ¡Hasta pronto!
+              </p>
+              <p>
+                  <strong>
+                      Teléfono: 
+                  </strong>
+                  (+ 54) 11 5614 5671
+                  <br>
+                  <strong>
+                    Email:
+                  </strong>
+                  consultas@coachjulietanor.com
+                  <br>
+                  <strong>
+                    Dirección:
+                  </strong>
+                  CABA Buenos Aires
+              </p>
+          </div>
+          <div class="formulario">			
+                <!-- <h1>Julieta Nor</h1>
+                <h3>Nos contactaremos contigo</h3> -->
+            <form action="/contacto/enviar" method="post">				
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+                <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>		
+                <p>
+                    <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio" >*</span>
+                    </label>
+                        <input type="text" name="asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>		
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>                     
+                        <textarea name="mensaje" class="mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                    </p>	  								
+                <button class="buttonC" type="submit" name="enviar" id="enviar"><p>Enviar</p></button>
+                <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>					
+            </form>
+          </div>	
+      </div>
+  </main>
+  <%- include("partials/footer") %> 
+</body>
+</html>
+
