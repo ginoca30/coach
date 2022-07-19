@@ -23,7 +23,7 @@ const controller = {
 		res.render("contacto",{title:title});
 	},
 	enviar: (req,res)=>{
-    if (!(req.body.mensaje).includes("@")){
+    if (!(req.body.mensaje).includes("@") & !(req.body.mensaje).includes("http")) {
       const output = `
           <p>Has recibido un nuevo contacto</p>
           <h3>Detalle de Contacto</h3>
@@ -32,7 +32,7 @@ const controller = {
             <li>Agencia: ${req.body.agencia}</li>
             <li>Email: ${req.body.email}</li>
             <li>Telefono: ${req.body.telefono}</li>
-        <li>Asunto: ${req.body.asunto}</li>
+            <li>Asunto: ${req.body.asunto}</li>
           </ul>
           <h3>Mensaje</h3>
           <p>${req.body.mensaje}</p>
