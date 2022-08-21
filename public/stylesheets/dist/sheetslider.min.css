@@ -76,7 +76,7 @@
     position:absolute;
     right:0;
     left: 0;
-    bottom: 51%;
+    bottom: 67%;
     z-index:10;
     transform:translate3d(0,0,0);
     transition:transform .3s;
@@ -187,7 +187,7 @@
 @media (min-width:1024px){
     .sh__btns{display:flex}
     .sh__arrows {
-        bottom: 41%;
+        bottom: 57%;
     }
     .sh-control {
         bottom: calc(4em + 16%);
